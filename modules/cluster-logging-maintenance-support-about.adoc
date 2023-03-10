@@ -10,5 +10,5 @@ The supported way of configuring the {logging-title} is by configuring it using 
 
 [NOTE]
 ====
-If you _must_ perform configurations not described in the {product-title} documentation, you _must_ set your Red Hat OpenShift Logging Operator or OpenShift Elasticsearch Operator to *Unmanaged*. An unmanaged OpenShift Logging environment is _not supported_ and does not receive updates until you return OpenShift Logging to *Managed*.
+ A new revision of the Kubernetes API server will only roll out if the API server named certificate are added for the first time. If the named certificate is renewed or modified later then the Kubernetes API server will not roll out to new revision
 ====
