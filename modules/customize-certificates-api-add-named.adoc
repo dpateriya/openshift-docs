@@ -113,3 +113,8 @@ kube-apiserver   {product-version}.0     True        False         False      14
 ----
 +
 If `PROGRESSING` is showing `True`, wait a few minutes and try again.
+
+[NOTE]
+====
+A new revision of the Kubernetes API server will only roll out if the API server named certificate are added for the first time. If the named certificate is renewed or modified later then the Kubernetes API server will not roll out to new revision
+====
